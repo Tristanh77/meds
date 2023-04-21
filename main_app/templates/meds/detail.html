@@ -14,7 +14,9 @@
                 <p>Instructions: {{ med.instructions }}</p>
             </div>
             <div class="card-action">
+                {% comment %} routes to the med_form.html {% endcomment %}
                 <a href="{% url 'meds_update' med.id %}">Edit</a>
+                {% comment %} routes to the med_confirm_delete.html {% endcomment %}
                 <a href="{% url 'meds_delete' med.id %}">Delete</a>
             </div>
         </div>
@@ -41,6 +43,7 @@
         </table>
     </div>
 </div>
+{% comment %} special affects to make our datepicker and timepicker {% endcomment %}
 <script>
     const dateEl = document.getElementById('id_date');
     M.Datepicker.init(dateEl, {
