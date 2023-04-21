@@ -16,7 +16,7 @@ footer.page-footer {
   text-align: right;
   background-color: lightgray;
 }
-
+/* timepicker */
 .timepicker-digital-display {
   background-color: #0277bd;
 }
@@ -37,6 +37,7 @@ p,
 label {
   color: #01579b;
 }
+/* lines for forms */
 input:not([type]):focus:not([readonly]),
 input[type="text"]:not(.browser-default):focus:not([readonly]),
 input[type="password"]:not(.browser-default):focus:not([readonly]),

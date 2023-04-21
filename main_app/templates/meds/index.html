@@ -3,6 +3,7 @@
 
 <h1 class="titles">Medication List</h1>
 
+{% comment %} for every medication in the meds database... {% endcomment %}
 {% for med in meds %}
 <a href="{% url 'detail' med.id %}">
     <div class="card hover">
